@@ -30,7 +30,7 @@ bot.on("ready", function() {
 
 bot.on("guildMemberAdd", function(member) {
     let role = member.guild.roles.find("name", "Viewers");
-    member.guild.channels.find("name", "général").sendMessage(member.toString() + " Bienvenue sur Evoria-Life, installe toi tranquillement ! :wink: :wink:  ");
+    member.guild.channels.find("name", "bienvenue").sendMessage(member.toString() + " Bienvenue sur CodingLife | Hebergeur, installe toi tranquillement ! :wink: :wink:  ");
     member.addRole(role);
 });
 
