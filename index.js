@@ -69,7 +69,6 @@ bot.on("message", async function(message) {
                 .addField("c.youtube", "Faite cette commande + (la recherche que vous souhaitez faire)")
                 .addField("c.twitch", "Pour avoir la chaine Twitch de Lolox !")
                 .addField("c.ts", "Ip du TeamSpeak3")
-                .addField("c.collection", "Pour avoir la collection !")
                 .addField("c.partenaire", "CodingLife Hebergeur")
                 .addField("c.Arrive", "???")
                 .addField("c.serveur", " Serveur Arma3")
@@ -130,8 +129,8 @@ bot.on("message", async function(message) {
      message.delete();
     break;
       
-     case "fofo":
-     message.reply("Arrive bientôt :ok_hand:");
+     case "ts":
+     message.reply("TS :hebergeur-codinglife.tk he :ok_hand:");
      message.delete();
     break;
       
