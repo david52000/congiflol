@@ -130,7 +130,7 @@ bot.on("message", async function(message) {
     break;
       
      case "ts":
-     message.reply("TS :hebergeur-codinglife.tk he :ok_hand:");
+     message.reply("TS : hebergeur-codinglife.tk he :ok_hand:");
      message.delete();
     break;
       
