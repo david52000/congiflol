@@ -70,7 +70,7 @@ bot.on("message", async function(message) {
                 .addField("c.twitch", "Pour avoir la chaine Twitch de Lolox !")
                 .addField("c.ts", "Ip du TeamSpeak3")
                 .addField("c.collection", "Pour avoir la collection !")
-                .addField("c.partenaire", "CodingLife Hebrgeut")
+                .addField("c.partenaire", "CodingLife Hebergeur")
                 .addField("c.Arrive", "???")
                 .addField("c.serveur", " Serveur Arma3")
                 .setColor("#00a1ff")
