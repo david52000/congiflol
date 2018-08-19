@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const YTDL = require("ytdl-core");
-const PREFIX = "*";
+const PREFIX = "c.";
 const queue = new Map();
 const EVERYONE = "@";
 
@@ -24,7 +24,7 @@ function play(connection, message) {
 }
 
 bot.on("ready", function() {
-    bot.user.setGame("Evoria-Life | *aide | By DaVid");
+    bot.user.setGame("CodingLife | c.aide | By DaVid");
     console.log("Le Bot Lolox est connecté")
 });
 
@@ -62,17 +62,17 @@ bot.on("message", async function(message) {
     switch (args[0].toLowerCase()) {
         case "aide":
             var embed = new Discord.RichEmbed()
-                .addField("*ping", "C'est pour savoir mon ping en ce moment")
-                .addField("*musique", "Jouer une musique !")
-                .addField("*membres", "Permet de savoir le nombre de personnes sur le Discord")
-                .addField("*google", "Faite cette commande + (la recherche que vous souhaitez faire) !")
-                .addField("*youtube", "Faite cette commande + (la recherche que vous souhaitez faire)")
-                .addField("*twitch", "Pour avoir la chaine Twitch de Lolox !")
-                .addField("*ts", "Ip du TeamSpeak3")
-                .addField("*collection", "Pour avoir la collection !")
-                .addField("*partenaire", "CodingLife Hebrgeut")
-                .addField("*Arrive", "???")
-                .addField("*serveur", " Serveur Arma3")
+                .addField("c.ping", "C'est pour savoir mon ping en ce moment")
+                .addField("c.musique", "Jouer une musique !")
+                .addField("c.membres", "Permet de savoir le nombre de personnes sur le Discord")
+                .addField("c.google", "Faite cette commande + (la recherche que vous souhaitez faire) !")
+                .addField("c.youtube", "Faite cette commande + (la recherche que vous souhaitez faire)")
+                .addField("c.twitch", "Pour avoir la chaine Twitch de Lolox !")
+                .addField("c.ts", "Ip du TeamSpeak3")
+                .addField("c.collection", "Pour avoir la collection !")
+                .addField("c.partenaire", "CodingLife Hebrgeut")
+                .addField("c.Arrive", "???")
+                .addField("c.serveur", " Serveur Arma3")
                 .setColor("#00a1ff")
                 .setAuthor("Aide de Evoria | Bot")
                 .setDescription("Voici les commandes")
@@ -185,13 +185,13 @@ bot.on("message", async function(message) {
 
             var embed = new Discord.RichEmbed()
 
-                .addField("*.purge", "Pour supprimer les messages, faites a.purge + (le nombre de message à supprimer dans le channel)")
+                .addField("c.purge", "Pour supprimer les messages, faites a.purge + (le nombre de message à supprimer dans le channel)")
 
-                .addField("*.annonce", "Met un message dans Information, faites a.annonce + (le message à mettre dans information)")
+                .addField("c.annonce", "Met un message dans Information, faites a.annonce + (le message à mettre dans information)")
 
-                .addField("*.@annonce", "Met un message dans information avec une mention dans lequel vous avez écrit, faites *.@annonce (dans un channel) + le texte que vous voulez mettre")
+                .addField("c.@annonce", "Met un message dans information avec une mention dans lequel vous avez écrit, faites *.@annonce (dans un channel) + le texte que vous voulez mettre")
 
-                .addField("*.warn", "Pour l'utiliser, faite la commande + mention de la personne + raison")
+                .addField("c.warn", "Pour l'utiliser, faite la commande + mention de la personne + raison")
 
                 .setColor("#ff0000")
 
