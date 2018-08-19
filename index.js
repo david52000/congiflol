@@ -74,7 +74,7 @@ bot.on("message", async function(message) {
                 .addField("c.Arrive", "???")
                 .addField("c.serveur", " Serveur Arma3")
                 .setColor("#00a1ff")
-                .setAuthor("Aide de Evoria | Bot")
+                .setAuthor("Aide de Conding | Bot")
                 .setDescription("Voici les commandes")
                 .setTimestamp()
                 message.delete()
