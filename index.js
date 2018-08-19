@@ -97,7 +97,7 @@ bot.on("message", async function(message) {
             .addField("Modérateur :", message.author.username)
             .addField("Message supprimé", messagecount)
             .addField("Heure:", message.channel.createdAt)
-            .setColor("#009999")
+            .setColor("#00ff11")
             .setFooter("Ouf ! Sa as fait un bon ménage dans le serveur ! ^^")
             message.delete()
             member.guild.channels.find("name", "logs").sendEmbed(embed);
@@ -184,15 +184,15 @@ bot.on("message", async function(message) {
 
             var embed = new Discord.RichEmbed()
 
-                .addField("c.purge", "Pour supprimer les messages, faites a.purge + (le nombre de message à supprimer dans le channel)")
+                .addField("c.purge", "Pour supprimer les messages, faites c.purge + (le nombre de message à supprimer dans le channel)")
 
                 .addField("c.annonce", "Met un message dans Information, faites a.annonce + (le message à mettre dans information)")
 
-                .addField("c.@annonce", "Met un message dans information avec une mention dans lequel vous avez écrit, faites *.@annonce (dans un channel) + le texte que vous voulez mettre")
+                .addField("c.@annonce", "Met un message dans information avec une mention dans lequel vous avez écrit, faites c.@annonce (dans un channel) + le texte que vous voulez mettre")
 
                 .addField("c.warn", "Pour l'utiliser, faite la commande + mention de la personne + raison")
 
-                .setColor("#ff0000")
+                .setColor("#00fff6")
 
                 .setFooter("Idée de commandes ? Proposez des commandes à DaVid en MP !")
 
@@ -258,7 +258,7 @@ bot.on("message", async function(message) {
             .addField("Modérateur :", message.author.username)
             .addField("Raison", reason)
             .addField("Heure:", message.channel.createdAt)
-            .setColor("#009999")
+            .setColor("#990000")
             .setFooter("Le warn a été réalisé avec succès ! ^^")
             message.delete()
             member.guild.channels.find("name", "liste-warn").sendEmbed(embed);
