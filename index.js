@@ -67,7 +67,7 @@ bot.on("message", async function(message) {
                 .addField("c.membres", "Permet de savoir le nombre de personnes sur le Discord")
                 .addField("c.google", "Faite cette commande + (la recherche que vous souhaitez faire) !")
                 .addField("c.youtube", "Faite cette commande + (la recherche que vous souhaitez faire)")
-                .addField("c.twitch", "Pour avoir la chaine Twitch de Lolox !")
+                .addField("c.twitch", "Pour avoir la chaine Twitch de CodingLife ARRIVE !")
                 .addField("c.ts", "Ip du TeamSpeak3")
                 .addField("c.partenaire", "CodingLife Hebergeur")
                 .addField("c.Arrive", "???")
