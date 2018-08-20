@@ -107,6 +107,11 @@ bot.on("message", async function(message) {
      message.reply("Nous sommes actuellement ``" + message.guild.memberCount + " membres`` sur ``" + message.guild.name + "`` !");
      message.delete();
      break;
+      
+      case "membresadmin":
+     message.channel.send("@everyone  Nous sommes actuellement ``" + message.guild.memberCount + " membres`` sur ``" + message.guild.name + "`` !");
+     message.delete();
+     break;
 
         case "google":
     let glg = message.content.split(' ');
