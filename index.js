@@ -70,7 +70,7 @@ bot.on("message", async function(message) {
                 .addField("c.twitch", "Pour avoir la chaine Twitch de CodingLife ARRIVE !")
                 .addField("c.ts", "Ip du TeamSpeak3")
                 .addField("c.partenaire", "CodingLife Hebergeur")
-                .addField("c.Arrive", "???")
+                .addField("c.arrive", "???")
                 .addField("c.serveur", " Serveur Arma3")
                 .setColor("#00a1ff")
                 .setAuthor("Aide de Conding | Bot")
@@ -157,6 +157,14 @@ bot.on("message", async function(message) {
       case "serveur":
 
      message.reply("Serveur arrive dans quelque temps");
+
+     message.delete();
+
+    break;
+      
+      case "arrive":
+
+     message.reply("Site en maitnenence et machine prochainement");
 
      message.delete();
 
