@@ -69,7 +69,7 @@ bot.on("message", async function(message) {
                 .addField("*youtube", "Faite cette commande + (la recherche que vous souhaitez faire)")
                 .addField("*twitch", "Pour avoir la chaine Twitch de CodingLife ARRIVE !")
                 .addField("*ts", "Ip du TeamSpeak3")
-                .addField("*partenaire1", ":unlock: Partenaire Discord : https://discord.gg/DveQCp4")
+                .addField("*partenaire1", "Partenaire Discord")
                 .addField("*arrive", "???")
                 .addField("*serveur", " Serveur Arma3")
                 .setColor("#00a1ff")
@@ -139,8 +139,8 @@ bot.on("message", async function(message) {
      message.delete();
     break;
       
-      case "partenaire":
-     message.reply("Voilà le site: http://hebergeur-codinglife.tk/ :ok_hand:");
+      case "partenaire1":
+     message.reply(":unlock: Voilà le partenaire Discord #1 :unlock: : https://discord.gg/DveQCp4");
      message.delete();
     break;
 
