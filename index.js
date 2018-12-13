@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const YTDL = require("ytdl-core");
-const PREFIX = "c.";
+const PREFIX = "*";
 const queue = new Map();
 const EVERYONE = "@";
 
@@ -24,8 +24,8 @@ function play(connection, message) {
 }
 
 bot.on("ready", function() {
-    bot.user.setGame("CodingLife | c.aide | By DaVid");
-    console.log("Le Bot Lolox est connecté")
+    bot.user.setGame("DYCode | *.aide");
+    console.log("Le Bot DaVid est connecté")
 });
 
 bot.on("guildMemberAdd", function(member) {
