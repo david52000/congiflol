@@ -24,7 +24,7 @@ function play(connection, message) {
 }
 
 bot.on("ready", function() {
-    bot.user.setGame("DYCode | *.aide");
+    bot.user.setGame("DYCode | *aide");
     console.log("Le Bot DaVid est connecté")
 });
 
@@ -62,16 +62,16 @@ bot.on("message", async function(message) {
     switch (args[0].toLowerCase()) {
         case "aide":
             var embed = new Discord.RichEmbed()
-                .addField("c.ping", "C'est pour savoir mon ping en ce moment")
-                .addField("c.musique", "Jouer une musique !")
-                .addField("c.membres", "Permet de savoir le nombre de personnes sur le Discord")
-                .addField("c.google", "Faite cette commande + (la recherche que vous souhaitez faire) !")
-                .addField("c.youtube", "Faite cette commande + (la recherche que vous souhaitez faire)")
-                .addField("c.twitch", "Pour avoir la chaine Twitch de CodingLife ARRIVE !")
-                .addField("c.ts", "Ip du TeamSpeak3")
-                .addField("c.partenaire", "CodingLife Hebergeur")
-                .addField("c.arrive", "???")
-                .addField("c.serveur", " Serveur Arma3")
+                .addField("*ping", "C'est pour savoir mon ping en ce moment")
+                .addField("*musique", "Jouer une musique !")
+                .addField("*membres", "Permet de savoir le nombre de personnes sur le Discord")
+                .addField("*google", "Faite cette commande + (la recherche que vous souhaitez faire) !")
+                .addField("*youtube", "Faite cette commande + (la recherche que vous souhaitez faire)")
+                .addField("*twitch", "Pour avoir la chaine Twitch de CodingLife ARRIVE !")
+                .addField("*ts", "Ip du TeamSpeak3")
+                .addField("*partenaire1", ":unlock: Partenaire Discord : https://discord.gg/DveQCp4")
+                .addField("*arrive", "???")
+                .addField("*serveur", " Serveur Arma3")
                 .setColor("#00a1ff")
                 .setAuthor("Aide de Conding | Bot")
                 .setDescription("Voici les commandes")
